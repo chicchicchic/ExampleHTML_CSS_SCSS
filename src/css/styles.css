@@ -39,7 +39,7 @@ ul, li {
 }
 @media only screen and (min-width: 740px) {
   .header-container {
-    height: 268px;
+    height: 366px;
   }
 }
 .header-container .header-top {
@@ -81,7 +81,7 @@ ul, li {
   color: #fff;
 }
 .header-container .tab-des-nav {
-  display: block;
+  display: none;
 }
 .header-container .tab-des-nav .tab-des-nav-list {
   display: flex;
@@ -98,6 +98,11 @@ ul, li {
 .header-container .tab-des-nav .tab-des-nav-link:hover {
   color: red;
   cursor: pointer;
+}
+@media only screen and (min-width: 740px) {
+  .header-container .tab-des-nav {
+    display: block;
+  }
 }
 .header-container .nav-overlay {
   position: fixed;
@@ -148,12 +153,16 @@ ul, li {
 }
 @media only screen and (min-width: 740px) {
   .header-container .header-text {
-    font-size: 22px;
+    font-size: 39px;
+    margin-top: 124px;
   }
 }
 
+.introduce-container {
+  width: 100%;
+}
 .introduce-container .item {
-  width: 20%;
+  width: 33.3333333333%;
   height: auto;
   margin-top: 18px;
   padding: 4px 14px 14px 14px;
@@ -178,10 +187,12 @@ ul, li {
   font-size: 16px;
   color: rgb(133, 125, 125);
 }
+.introduce-container .slick-initialized .slick-slide {
+  margin: 0px 2px;
+}
 
 .img-list {
-  margin-top: 50px;
-  margin-left: 20px;
+  margin: 50px auto;
   width: 90%;
   display: flex;
   flex-direction: row;
@@ -198,6 +209,11 @@ ul, li {
   margin-top: 0px;
   margin-left: -2px;
   border-radius: 2%;
+}
+@media only screen and (min-width: 740px) {
+  .img-list .img-item {
+    height: 200px;
+  }
 }
 .img-list .img-item:hover {
   opacity: 1;
@@ -288,6 +304,9 @@ ul, li {
 .brand .brand-body-bottom i,
 .brand .brand-body-bottom .brand-link {
   color: orange;
+}
+.brand .slick-initialized .slick-slide {
+  margin: 0px 2px;
 }
 
 .footer {

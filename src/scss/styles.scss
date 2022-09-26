@@ -12,7 +12,7 @@
   position: relative;
   z-index: 30;
   @media only screen and (min-width: 740px) {
-    height: 268px;
+    height: 366px;
   }
 
   .header-top {
@@ -55,7 +55,7 @@
 
   // Tablet & Destop Nav
   .tab-des-nav {
-    display: block;
+    display: none;
     .tab-des-nav-list {
       display: flex;
     }
@@ -72,9 +72,9 @@
         cursor: pointer;
       }
     }
-    // @media only screen and (min-width: 740px) {
-    //   display: block;
-    // }
+    @media only screen and (min-width: 740px) {
+      display: block;
+    }
   }
 
 
@@ -148,7 +148,8 @@
     margin-left: 20px;
     z-index: 3;
     @media only screen and (min-width: 740px) {
-      font-size: 22px;
+      font-size: 39px;
+      margin-top: 124px;
     }
   }
 
@@ -156,9 +157,9 @@
 
 // Introduce
 .introduce-container {
-
+  width: 100%;
   .item {
-    width: 20%;
+    width: calc(100%/3);
     height: auto;
     margin-top: 18px;
     padding: 4px 14px 14px 14px;
@@ -189,12 +190,19 @@
 
   }
 
+  .slick-initialized {
+    .slick-slide {
+      margin: 0px 2px;
+  } 
+}
+
 }
 
 // Image List
 .img-list {
-  margin-top: 50px;
-  margin-left: 20px;
+  // margin-top: 50px;
+  // margin-left: 20px;
+  margin: 50px auto;
   width: 90%;
   display: flex;
   flex-direction: row;
@@ -212,6 +220,10 @@
     margin-top: 0px;
     margin-left: -2px;
     border-radius: 2%;
+
+    @media only screen and (min-width: 740px) {
+      height: 200px;
+    }
 
     &:hover {
       opacity: 1;
@@ -307,7 +319,11 @@
     }
 
   }
-
+  .slick-initialized {
+    .slick-slide {
+      margin: 0px 2px;
+    }
+  } 
 }
 
 // Footer
