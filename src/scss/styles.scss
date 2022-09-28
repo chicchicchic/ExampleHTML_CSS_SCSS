@@ -11,6 +11,7 @@
   background-size: cover;
   position: relative;
   z-index: 30;
+
   @media only screen and (min-width: 740px) {
     height: 366px;
   }
@@ -22,9 +23,11 @@
     position: relative;
     top: 20px;
     margin: 0px 16px;
+
     @media only screen and (min-width: 740px) {
       margin: 0px 20px;
     }
+
   }
 
   .logo-img {
@@ -32,12 +35,14 @@
     height: 56px;
     border-radius: 50%;
     z-index: 3;
+
     @media only screen and (min-width: 740px) {
       height: 72px;
     }
+
   }
 
-  // Mobile nav
+  // Mobile nav btn
   .mobile-menu-btn {
     position: relative;
     height: 30px;
@@ -51,35 +56,39 @@
       font-size: 34px;
       color: $font-main-color;
     }
+
   }
 
   // Tablet & Destop Nav
   .tab-des-nav {
     display: none;
+
     .tab-des-nav-list {
       display: flex;
     }
+
     .tab-des-nav-item {
       padding: 0px 6px;
     }
+
     .tab-des-nav-link {
       text-decoration: none;
       font-size: 34px;
       color: $font-main-color;
       font-weight: bold;
+
       &:hover {
         color: $red-color;
         cursor: pointer;
       }
+
     }
+
     @media only screen and (min-width: 740px) {
       display: block;
     }
+    
   }
-
-
-
-
 
   .nav-overlay {
     position: fixed;
@@ -101,7 +110,6 @@
       }
 
     }
-
   }
 
   .mobile-nav {
@@ -147,17 +155,19 @@
     margin-top: 82px;
     margin-left: 20px;
     z-index: 3;
+
     @media only screen and (min-width: 740px) {
       font-size: 39px;
       margin-top: 124px;
     }
-  }
 
+  }
 }
 
 // Introduce
 .introduce-container {
   width: 100%;
+
   .item {
     width: calc(100%/3);
     height: auto;
@@ -191,17 +201,16 @@
   }
 
   .slick-initialized {
+
     .slick-slide {
       margin: 0px 2px;
-  } 
-}
+    } 
 
+  }
 }
 
 // Image List
 .img-list {
-  // margin-top: 50px;
-  // margin-left: 20px;
   margin: 50px auto;
   width: 90%;
   display: flex;
@@ -212,9 +221,11 @@
     background-color: $black-color;
     position: relative;
     z-index: 5;
+
     @media only screen and (min-width: 740px) {
       width: calc(100% / 4);
     }
+
   }
 
   .img-item {
@@ -236,7 +247,6 @@
     }
 
   }
-
 }
 
 // Brands of the company
@@ -323,10 +333,13 @@
     }
 
   }
+
   .slick-initialized {
+
     .slick-slide {
       margin: 0px 2px;
     }
+
   } 
 }
 
@@ -334,6 +347,7 @@
 .footer {
   width: 100%;
   background-color: $gray-dark-color;
+
   @media only screen and (min-width: 1024px) {
     margin-top: 20px;
   }
@@ -343,9 +357,11 @@
     width: 336px;
     height: 2px;
     margin: auto;
+
     @media only screen and (min-width: 1024px) {
       width: 100%;
     }
+
   }
 
   .info-list {
@@ -354,20 +370,25 @@
 
   .info-list-wrap {
     text-align: center;
+
     @media only screen and (min-width: 740px) {
       display: flex;
       justify-content: space-around;
     }
+
     @media only screen and (min-width: 1024px) {
       justify-content: start;
     }
+
   }
 
   .info-list-item {
     padding: 10px 0px;
+
     @media only screen and (min-width: 1024px) {
       padding: 0px 26px;
     }
+
   }
 
   .info-item-link {
@@ -385,18 +406,23 @@
     display: flex;
     justify-content: space-around;
     padding: 20px 0px;
+
     @media only screen and (min-width: 740px) and (max-width: 1023px) {
       justify-content: space-evenly;
     }
+
     @media only screen and (min-width: 1024px) {
       justify-content: center;
     }
+
   }
 
   .social-list-item {
+
     @media only screen and (min-width: 1024px) {
       padding: 0px 26px;
     }
+
   }
 
   .social-item-link {
@@ -438,7 +464,6 @@
     }
 
   }
-
 }
 
 

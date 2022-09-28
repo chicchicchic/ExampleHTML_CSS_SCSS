@@ -33,6 +33,7 @@ $('.items-layout').slick({
         }
     ]
 });
+
 //  Brand List Slick Slider
 $('.brand-list').slick({
     dots: true,
