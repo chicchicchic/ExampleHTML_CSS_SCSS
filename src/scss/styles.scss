@@ -115,7 +115,7 @@
   .mobile-nav {
 
     .mobile-nav-wrap {
-      background-color: #fff;
+      background-color: $font-main-color;
       margin-top: 80px;
       position: fixed;
       width: 200px;
@@ -149,7 +149,7 @@
 
   .header-text {
     position: relative;
-    color: #fff;
+    color: $font-main-color;
     font-weight: 500;
     font-size: 18px;
     margin-top: 82px;
