@@ -90,59 +90,6 @@
     
   }
 
-  .nav-overlay {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: $overlay-full-sceen;
-    z-index: 40;
-    display: none;
-  }
-
-  #nav-input {
-
-    &:checked {
-
-      & ~ .nav-overlay {
-        display: block;
-      }
-
-    }
-  }
-
-  .mobile-nav {
-
-    .mobile-nav-wrap {
-      background-color: $font-main-color;
-      margin-top: 80px;
-      position: fixed;
-      width: 200px;
-      top: -80px;
-      right: 0px;
-      bottom: 0px;
-      z-index: 50;
-      transform: translateX(100%);
-    }
-
-    .nav-close-btn {
-      padding: 6px;
-
-      i {
-        font-size: 34px;
-        font-weight: 600;
-      }
-
-    }
-
-    .mobile-nav-list {
-      margin-top: 30px;
-      text-align: center;
-    }
-
-  }
-
   .nav-input {
     display: none;
   }
@@ -271,11 +218,10 @@
   .brand-list {
     width: 100%;
     margin-top: 20px;
-    display: flex;
   }
 
   .brand-list-wrap {
-    width: 70%;
+    width: 100%;
     margin: auto;
     padding-bottom: 14px;
     border: 2px solid $gray-color;
